@@ -1,4 +1,4 @@
-# Sequence-Detector
+![Screenshot 2024-10-17 141257](https://github.com/user-attachments/assets/a00e9219-1022-471d-b6c6-5d339ce9c82b)# Sequence-Detector
 Aim
 To design and simulate a sequence detector using both Moore and Mealy state machine models in Verilog HDL, and verify their functionality through a testbench using the Vivado 2023.1 simulation environment. The objective is to detect a specific sequence of bits (e.g., 1011) and compare the Moore and Mealy designs.
 
@@ -84,6 +84,8 @@ module moore_sequence_detector (
     end
 endmodule
 
+![Screenshot 2024-10-17 141257](https://github.com/user-attachments/assets/fbc25759-dde2-4e41-b137-bb0d15c53426)
+
 Verilog Code for Sequence Detector Using Mealy FSM
 
 // mealy_sequence_detector.v
@@ -135,6 +137,7 @@ module mealy_sequence_detector (
     end
 endmodule
 
+![Screenshot 2024-10-17 141317](https://github.com/user-attachments/assets/98c4819f-8078-462a-9192-8ad41071cb03)
 
 Testbench for Sequence Detector (Moore and Mealy FSMs)
 
@@ -196,6 +199,8 @@ module sequence_detector_tb;
                  $time, seq_in, moore_detected, mealy_detected);
     end
 endmodule
+
+![Screenshot 2024-10-17 141747](https://github.com/user-attachments/assets/e786b20e-db04-4107-af0f-2afbee1301ff)
 
 Conclusion
 In this experiment, Moore and Mealy FSMs were successfully designed and simulated to detect the sequence 1011. Both designs worked as expected, with the main difference being that the Moore FSM generated the output based on the current state, while the Mealy FSM generated the output based on both the current state and input. The testbench verified the functionality of both FSMs, demonstrating that the Verilog HDL can effectively model both types of state machines for sequence detection tasks.
